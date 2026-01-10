@@ -1,9 +1,4 @@
 import mongoose from "mongoose";
-<<<<<<< HEAD
-// import { unique } from "next/dist/build/utils";
-=======
-
->>>>>>> 96f911fd5c24045dc5dc85df5484f84efd7b5902
 
 const userSchema = new mongoose.Schema({
     _id: { type: String, required: true },

@@ -16,7 +16,7 @@ async function connectDB() {
         bufferCommands:false
        } 
 
-       cached.Promise = (await mongoose.connect(`${process.env.MONGODB_URI}/quickcart`,opts)).isObjectIdOrHexString(mongoose =>{
+       cached.Promise = await mongoose.connect(`${process.env.MONGODB_URI}/quickcart`,opts).then(mongoose =>{
         return mongoose
        })
     }
